@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Clothing Projects - Application</title>
+    <link rel="stylesheet" href="State.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+
+    <header class="site-header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>PARADIGM CLOTHING PROJECTS</h1>
+                <p>STUDENT APPLICATION FORM</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <form id="personalInfoForm">
+            
+            <div class="form-title">
+                <i class="fas fa-user"></i>
+                <h2>Personal Information</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Student Type <span class="req">*</span></label>
+                    <select name="studentType" required>
+                        <option value="">-- Select Student Type --</option>
+                        <option value="New Student">New Student</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Transferee">Transferee</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Religion <span class="req">*</span></label>
+                    <select name="religion" required>
+                        <option value="">-- Select Religion --</option>
+                        <option value="Roman Catholic">Roman Catholic</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Protestantism">Protestantism</option>
+                        <option value="Christianity">Christianity</option>
+                        <option value="Hinduism">Hinduism</option>
+                        <option value="Buddhism">Buddhism</option>
+                        <option value="Judaism">Judaism</option>
+                        <option value="Atheism">Atheism</option>
+                        <option value="Agnosticism">Agnosticism</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Civil Status <span class="req">*</span></label>
+                    <select name="civilStatus" required>
+                        <option value="">-- Select Civil Status --</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Annulled">Annulled</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>First Name <span class="req">*</span></label>
+                    <input type="text" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label>Middlename</label>
+                    <input type="text" name="middleName" placeholder="Leave blank if none">
+                </div>
+                <div class="form-group">
+                    <label>Last Name <span class="req">*</span></label>
+                    <input type="text" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Suffix</label>
+                    <input type="text" name="suffix" placeholder="Jr., Sr., II, etc. (Leave blank if none)">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number <span class="req">*</span></label>
+                    <input type="text" name="contactNumber" id="contactNumber" placeholder="0xxxxxxxxxx" maxlength="11" required>
+                    <small class="error-msg" style="color:red; display:none; font-size: 0.75rem; margin-top:5px;">Must start with 0 and be 11 digits.</small>
+                </div>
+                <div class="form-group">
+                    <label>Birthdate <span class="req">*</span></label>
+                    <input type="date" name="birthDate" required>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Sex <span class="req">*</span></label>
+                    <select name="sex" required>
+                        <option value="">-- Select Sex --</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Email Address <span class="req">*</span></label>
+                    <input type="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nationality <span class="req">*</span></label>
+                    <input type="text" name="nationality" list="nationality-list" placeholder="Type to search nationalities..." required autocomplete="off">
+                    <datalist id="nationality-list">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="grid-3 align-bottom">
+                <div class="form-group">
+                    <label>Country <span class="req">*</span></label>
+                    <input type="text" name="country" list="country-list" placeholder="Type to search countries..." required autocomplete="off">
+                    <datalist id="country-list">
+                    </datalist>
+                </div>
+
+                <div class="form-group" style="grid-column: span 2;">
+                    <label>Complete Address <span class="req">*</span></label>
+                    <input type="text" name="completeAddress" required>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Blood Type <span class="req">*</span></label>
+                    <select name="bloodType" required>
+                        <option value="">-- Select Blood Type --</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group"></div>
+                <div class="form-group"></div>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Spouse Name</label>
+                    <input type="text" name="spouseName" placeholder="Leave blank if not applicable">
+                </div>
+                <div class="form-group">
+                    <label>Spouse Occupation</label>
+                    <input type="text" name="spouseOccupation" placeholder="Leave blank if not applicable">
+                </div>
+                <div class="form-group"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Student Application</button>
+
+        </form>
+    </div>
+
+    <footer class="site-footer">
+        <p>PARADIGM CLOTHING PROJECTS - ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <button class="close-modal-btn" id="closeModalX">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Success!</h3>
+            <p>Application Successfully Validated!</p>
+            <button class="modal-ok-btn" id="closeModalBtn">OK</button>
+        </div>
+    </div>
+
+    <script src="State JS.js"></script>
+</body>
+</html>
